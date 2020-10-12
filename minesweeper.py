@@ -110,6 +110,7 @@ def show_grid(finish=False):
 		print(f"{color_Blu}╚{'═'*(2 * width + 5)}╝{color_End}")
 
 def play():
+	to = time.time()
 	playing, win = True, False
 	os.system('clear')
 	help()
@@ -138,14 +139,14 @@ def play():
 		show_grid()
 	os.system('clear')
 	solve(True)
+	total_time = (int(10*(time.time() - to)))/10
 	if win:
-		# print(f"{color_Blu}╔{'═'*(2 * width + 5)}╗{color_End}")
 		print(f"{color_Blu}║{color_End}{' ' * (width - 2)}{blink_Sta}You Won !{blink_End}{' ' * (width - 2)}{color_Blu}║{color_End}")
-		print(f"{color_Blu}╚{'═'*(2 * width + 5)}╝{color_End}")
 	else:
-		# print(f"{color_Blu}╔{'═'*(2 * width + 5)}╗{color_End}")
 		print(f"{color_Blu}║{color_End}{' ' * (width - 2)}{blink_Sta}Game Over{blink_End}{' ' * (width - 2)}{color_Blu}║{color_End}")
-		print(f"{color_Blu}╚{'═'*(2 * width + 5)}╝{color_End}")
+	print(f"{color_Blu}║{color_End} Time: {' '*((2 * width - 4)-len(str(total_time)))}{blink_Sta}{total_time}{blink_End}s {color_Blu}║{color_End}")
+	print(f"{color_Blu}╚{'═'*(2 * width + 5)}╝{color_End}")
+
 
 def finalcheck():
 	global width, height
