@@ -133,7 +133,7 @@ def play():
 				print("You didn't finish.")
 			elif choice[0] == "help":
 				help()
-			elif choice[0] == "labiteadudul":
+			elif choice[0] == "anosweeper":
 				solve()
 		os.system('clear')
 		show_grid()
