@@ -16,4 +16,5 @@ Python 3.8.5 Minesweeper for terminal (Linux and Windows) by Anosema
 ## Incoming
 - Score system
 - Custom size and bombs
-- Saving Scores system
+- Saving scores system
+- Any changes ideas are welcomed
