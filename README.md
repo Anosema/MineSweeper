@@ -4,7 +4,7 @@ Python 3.8.5 Minesweeper for terminal (Linux and Windows) by Anosema
 ## Starting With Minesweeper
 - `git clone https://github.com/Anosema/MineSweeper`
 - `cd MineSweeper`
-- `python mine.py [difficulty 1-3]` or `python3 mine.py [difficulty 1-3]`
+- `python minesweeper.py [difficulty 1-3]` or `python3 minesweeper.py [difficulty 1-3]`
 
 ## Playing Minesweeper
 - You have 4 different commands :
@@ -14,4 +14,6 @@ Python 3.8.5 Minesweeper for terminal (Linux and Windows) by Anosema
 	- `help` that show the little paragraph about commands.
 
 ## Incoming
-- 
+- Score system
+- Custom size and bombs
+- Saving Scores system
