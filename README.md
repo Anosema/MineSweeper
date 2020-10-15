@@ -32,6 +32,5 @@ Usage :\n    -`python  minesweeper.py [difficulty 1-3]`\n    -`python3 minesweep
 
 ## Incoming
 - Score system
-- Custom size and bombs
 - Saving scores system
 - Any changes ideas are welcomed
