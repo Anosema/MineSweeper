@@ -13,16 +13,6 @@ Python 3.8.5 Minesweeper for terminal (Linux and Windows) by Anosema
 	  or
 	  `python3 minesweeper custom [x] [y] [number of bombs]`
 
-
-
-
-
-
-
-
-
-
-Usage :\n    -`python  minesweeper.py [difficulty 1-3]`\n    -`python3 minesweeper.py [difficulty 1-3]`\n    or\n    -`python  minesweeper custom [x] [y] [number of bombs]`\n    -`python3 minesweeper custom [x] [y] [number of bombs]`"
 ## Playing Minesweeper
 - You have 4 different commands :
 	- `x,y` where x and y are the coordinates of the cell you want to uncover.
