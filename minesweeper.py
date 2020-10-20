@@ -21,18 +21,6 @@ embed_light_magenta = '\x1b[95m'
 embed_light_cyan    = '\x1b[96m'
 embed_light_white   = '\x1b[97m'
 
-
-
-
-
-
-
-
-
-
-
-
-
 class Cell():
 	def __init__(self, x, y):
 		self.x = x
