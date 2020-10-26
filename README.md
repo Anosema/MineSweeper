@@ -2,8 +2,8 @@
 Python 3.8.5 Minesweeper for terminal (Linux and Windows) by Anosema
 
 ## Starting With Minesweeper
-- git clone https://github.com/Anosema/MineSweeper
-- cd MineSweeper
+- `git clone https://github.com/Anosema/MineSweeper`
+- `cd MineSweeper`
 
 ### Usage
 #### Choosed Difficulty
