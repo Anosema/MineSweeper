@@ -1017,6 +1017,295 @@
      </property>
     </widget>
    </widget>
+   <widget class="QFrame" name="Frame10_10">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>420</width>
+      <height>420</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="Mine_10_1_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>378</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>336</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>294</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>252</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>210</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>168</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_7">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>126</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_8">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>84</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>42</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_1_10">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_1">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>378</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_2">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>336</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_3">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>294</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_4">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>252</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_5">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>210</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_6">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>168</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_7">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>126</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_8">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>84</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_9">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>42</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_2_10">
+     <property name="geometry">
+      <rect>
+       <x>42</x>
+       <y>0</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mine_10_3_1">
+     <property name="geometry">
+      <rect>
+       <x>84</x>
+       <y>378</y>
+       <width>42</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="enabled">
@@ -1027,7 +1316,7 @@
      <x>0</x>
      <y>0</y>
      <width>480</width>
-     <height>30</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuGame">
