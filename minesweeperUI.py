@@ -174,6 +174,11 @@ def new_game(w, h, b):
 
 	width, height, bomb_number = w, h, b
 	Cell.height, Cell.width = int(440/height), int(440/width)
+	Game.MarkerButton.resize(int((Cell.width*height)/2), 30)
+	Game.CheckButton .resize(int((Cell.width*height)/2), 30)
+	Game.MarkerButton.move(30 , 470)
+	Game.CheckButton .move(30+int((Cell.width*height)/2), 470)
+
 	grid = []
 	for i in range(0,height):
 		grid.append([Cell(j, i, Game.Bomb_Canva) for j in range(0,width)])
