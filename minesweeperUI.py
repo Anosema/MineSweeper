@@ -35,9 +35,10 @@ class Cell():
 				if self.marked == False:
 					if self.bombed:
 						self.state  = "💣"
-						self.button.setStyleSheet("background-color : red")
+						self.button.setStyleSheet("background-color : #c0392b")
 						self.button.setEnabled(False)
 						solve()
+						NG.GameOver.show()
 						NG.show()
 					else:
 						self.checked   = True
@@ -109,11 +110,18 @@ class NewGame(QMainWindow):
 		self.setWindowTitle('New Game')
 		self.setFixedWidth(350)
 		self.setFixedHeight(150)
+		self.GameOver     = QLabel("Game Over", self)
 		self.LabelExplain = QLabel("Create New Game", self)
+		self.GameOver    .resize(300, 25)
 		self.LabelExplain.resize(300, 25)
+		self.GameOver    .setAlignment(Qt.AlignCenter)
 		self.LabelExplain.setAlignment(Qt.AlignCenter)
+		self.GameOver    .setFont(QFont('Arial', 17))
 		self.LabelExplain.setFont(QFont('Arial', 17))
+		self.GameOver    .move(25,25)
 		self.LabelExplain.move(25,50)
+
+		self.GameOver.close()
 
 		self.S5  = QPushButton('5x5\n5 Bombs', self)
 		self.S7  = QPushButton('7x7\n7 Bombs', self)
@@ -142,14 +150,12 @@ def finalcheck():
 				break
 		if breaked:
 			break
-	if breaked:
-		#pas win
-		print('pas win')
-	else:
+	if not breaked:
 		#win
-		print('win')
+		solve()
+		NG.show()
 
-def solve(finish=False):
+def solve():
 	global width, height
 	for x in range(width):
 		for y in range(height):
@@ -178,6 +184,7 @@ def new_game(w, h, b):
 				bomb.bomb()
 				break
 	NG.close()
+	NG.GameOver.close()
 	Game.show()
 
 app = QApplication(sys.argv)
