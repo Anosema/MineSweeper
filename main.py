@@ -14,27 +14,49 @@ class Cell(QWidget):
 		self.label = QLabel(self)
 		self.label.setAlignment(Qt.AlignCenter)
 
-	def check(self, c=0):
+	def check(self):
+		c = 0
 		index = self.y*int(sqrt(len(self.parent().grid)))+self.x
-		l = [-sqrt(len(self.parent().grid)+1)-1, -sqrt(len(self.parent().grid)+1), -sqrt(len(self.parent().grid)+1)+1, -1, +1, sqrt(len(self.parent().grid)+1)-1, sqrt(len(self.parent().grid)+1), sqrt(len(self.parent().grid)+1)+1]
 		if not self.checked:
 			self.checked = True
-			if self.bombed:
-				c += 1
-			else:
-				for i in l:
-					if 0 <= int(index+i) < len(self.parent().grid):
-						print(int(index+i))
-						c += 1 if self.parent().grid[int(index+i)].bombed else 0
-		return c
+			b1 = (self.y-1)*int(sqrt(len(self.parent().grid)))
+			b2 = self.y*int(sqrt(len(self.parent().grid)))
+			b3 = (self.y+1)*int(sqrt(len(self.parent().grid)))
+			b4 = (self.y+2)*int(sqrt(len(self.parent().grid)))
+			for i in [int(-sqrt(len(self.parent().grid)+1))-1, int(-sqrt(len(self.parent().grid)+1)), int(-sqrt(len(self.parent().grid)+1))+1]:
+				if 0 <= b1 <= index+i < b2 < len(self.parent().grid) and self.parent().grid[index+i].bombed:
+					c += 1
+			for i in [-1, 1]:
+				if 0 <= b2 <= index+i < b3 < len(self.parent().grid) and self.parent().grid[index+i].bombed:
+					c += 1
+			for i in [sqrt(len(self.parent().grid)+1)-1, sqrt(len(self.parent().grid)+1), sqrt(len(self.parent().grid)+1)+1]:
+				if 0 <= b3 <= int(index+i) < b4 < len(self.parent().grid) and self.parent().grid[int(index+i)].bombed:
+					c += 1
+			print(self.x, self.y, c)
+			self.label.setText(str(c))
+			if c == 0:
+				for i in [int(-sqrt(len(self.parent().grid)+1))-1, int(-sqrt(len(self.parent().grid)+1)), int(-sqrt(len(self.parent().grid)+1))+1]:
+					if 0 <= b1 <= index+i < b2 < len(self.parent().grid):
+						self.parent().grid[index+i].check()
+
+				for i in [-1, 1]:
+					if 0 <= b2 <= index+i < b3 < len(self.parent().grid):
+						self.parent().grid[index+i].check()
+
+				for i in [sqrt(len(self.parent().grid)+1)-1, sqrt(len(self.parent().grid)+1), sqrt(len(self.parent().grid)+1)+1]:
+					if 0 <= b3 <= int(index+i) < b4 < len(self.parent().grid):
+						self.parent().grid[int(index+i)].check()
+
 	def mousePressEvent(self, e):
 		if e.button() == Qt.LeftButton:
 			if not self.opened:
-				self.opened = True
+				# self.opened = True
 				if self.bombed:
-					print("bomb")
+					self.label.setText(icons["ti-target"])
 				else:
-					self.label.setText(str(self.check()))
+					print("check")
+					self.checked = False
+					self.check()
 					for c in self.parent().grid: c.checked = False
 		elif e.button() == Qt.RightButton:
 			if not self.opened:
@@ -55,6 +77,7 @@ class MainWindow(QMainWindow):
 		self.grid = [Cell(self, x, y) for y in range(5) for x in range(5)]
 		for i in choices(self.grid, k=5):
 			i.bombed = True
+			i.label.setText(icons["ti-target"])
 	def resizeEvent(self, e):
 		w, h = int(self.width()/sqrt(len(self.grid))), int(self.height()/sqrt(len(self.grid)))
 		for c in self.grid:
