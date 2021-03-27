@@ -57,12 +57,10 @@ class Cell():
 									     (self.y+1, self.x-1), (self.y+1, self.x), (self.y+1, self.x+1)]
 						self.near_bomb = 0
 						
-						# Counting near bombs
 						for cos in adj_cells:
 							if 0 <= cos[1] < width and 0 <= cos[0] < height and grid[cos[0]][cos[1]].bombed == True:
 								self.near_bomb += 1
 			
-						# Showing near bombs
 						if self.near_bomb == 0:
 							self.state    = f"{embed_green}0{embed_end}"
 							# Reveal adjacents cells when selected a 0 cell
